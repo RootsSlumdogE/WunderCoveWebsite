@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'WunderCove — REAL food brings us together.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,29 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Join the Movement',
+        href: '#',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:plant',
       },
       { text: 'Learn more', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      REAL food brings us together <span class="hidden xl:inline"></span>
+      <br /><span class="text-accent dark:text-white highlight"> In the Greater Houston Area</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">WunderCove</span> is dedicated to bringing you the best of both worlds—importing premium
+        European goods while partnering with local farmers who share our commitment to quality and sustainability.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">WunderCove: Production-ready.</span>
+      From artisanal breads to farm-fresh produce, every product reflects our belief that real food nourishes both body and
+      soul. For us, import is just the beginning—our true mission is to create a community where European traditions and
+      local farming come together to support healthier living and a more sustainable future.
     </Fragment>
   </Hero>
 
@@ -59,44 +60,44 @@ const metadata = {
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="What WunderCove Offers"
+    subtitle="Connecting you with quality food, local farms, and the best European imports for a healthier community."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Local Farm Partnerships',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'We collaborate with dedicated local farmers to source fresh, organic produce that supports sustainable agriculture.',
+        icon: 'tabler:plant',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Premium European Imports',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'We bring you the finest European goods, including artisanal breads and specialty snacks, crafted with care and quality.',
+        icon: 'tabler:package',
       },
       {
-        title: 'Best Practices',
+        title: 'Community-Sourced Ingredients',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Our products reflect a commitment to local sourcing and European craftsmanship, ensuring freshness and flavor in every bite.',
+        icon: 'tabler:leaf',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Farm-to-Table Philosophy',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'We embrace a farm-to-table approach, celebrating local flavors alongside our premium imports for a delicious dining experience.',
+        icon: 'tabler:home',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Support for Sustainable Practices',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'We prioritize farms that practice sustainability, ensuring our food choices benefit both our health and the environment.',
+        icon: 'tabler:recycle',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Community Engagement',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Join us in events and initiatives that connect you with local farmers and foster a stronger, healthier community.',
+        icon: 'tabler:users',
       },
     ]}
   />
@@ -105,33 +106,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Why We're Doing This"
+    title="Nourishing Health and Community at WunderCove"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Promoting Healthy Eating',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'We believe that quality food is the foundation of good health, providing essential nutrients that enhance well-being and vitality.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Support for Local Farmers',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'By sourcing from local farms, we ensure fresh, organic produce that is not only healthier for you but also benefits our community and environment.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Quality European Imports',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Our carefully selected European goods offer unique flavors and healthy options, helping you enjoy a diverse and nourishing diet.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://plus.unsplash.com/premium_photo-1667762241847-37471e8c8bc0?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Healthy Food Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why We Prioritize Health</h3>
+      At WunderCove, we are dedicated to fostering a healthier community through sustainable food practices.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,31 +146,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Avoid Harmful Additives',
+        description: `American processed foods often contain artificial preservatives and chemicals that can negatively impact your health over time.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Reduce Sugar and Salt Intake',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Many processed foods have excessive sugar and salt, contributing to obesity and heart disease—issues we strive to combat with quality nutrition.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Choose Nutrient-Dense Foods',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Processed options frequently lack essential nutrients; at WunderCove, we promote foods rich in vitamins and minerals to support overall health.',
       },
       {
-        title: 'Integration of media',
+        title: 'Embrace Natural Alternatives',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'We prioritize sourcing natural ingredients, ensuring our products are free from harmful chemicals and additives for a healthier lifestyle.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1489450278009-822e9be04dff?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Healthy Food Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Choose health over processed foods.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,31 +184,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Support Your Family’s Well-Being',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Nourishing your family with wholesome foods fosters physical health, emotional stability, and stronger family bonds through shared meals.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Empower Your Children’s Growth',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Providing kids with nutrient-rich foods supports their development, boosts their immune systems, and enhances their ability to learn and grow.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Prioritize Personal Health',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Making conscious food choices reduces the risk of chronic illnesses and promotes a healthier lifestyle, giving you the energy to thrive each day.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Create a Health-Conscious Community',
+        description: `By choosing quality ingredients, you contribute to a community that values health and sustainability, ensuring a brighter future for everyone.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1577896850715-ed0b7e3ece57?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Healthy Family Meal Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Prioritizing health for your family’s future.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,40 +218,42 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Experience the best of local and European flavors with the WunderBox."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Order Your WunderBox</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          'Select your favorite box tailored to your taste. Each WunderBox is packed with a curated selection of fresh, high-quality foods sourced from local farmers in Texas and premium European imports.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Unbox Freshness</span>',
+        description:
+          'Upon delivery or pickup, unwrap a delightful assortment of seasonal produce, artisanal goods, and treats that reflect our commitment to quality and sustainability. Experience the joy of fresh, nourishing foods!',
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 3: <span class="font-medium">Enjoy and Share</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'Prepare delicious meals or share with loved ones. Each item is a step towards healthier eating and a connection to local farming. Your choice supports sustainable practices and nourishes your community.',
+        icon: 'tabler:heart',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 4: <span class="font-medium">Repeat the Experience</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
+          'Become part of our community! With each order, you’re not just enjoying great food—you’re supporting local farmers and embracing a healthier lifestyle.',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1533899345698-ac4fb35f28c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'WunderBox image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -310,21 +313,22 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Discover more about WunderCove and its Journey"
+    information={`Our blog dives deeper into the story behind each WunderCove. 
+                 Learn about the farmers we partner with, the care that goes into every product, 
+                 and the importance of choosing high-quality, sustainable food. 
+                 Stay connected with new updates, seasonal box releases, and ways you can support local agriculture 
+                 while enjoying the finest European imports.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
+  <!-- <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -361,39 +365,40 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  /> -->
 
   <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Local Farms Partnered', amount: '0' },
+      { title: 'WunderBoxes Delivered', amount: '0' },
+      { title: 'Imported Products', amount: '0' },
+      { title: 'Families Nourished', amount: '0' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Get Your WunderBox',
+      href: '#order',
+      target: '_blank',
+      icon: 'tabler:box',
+    },
+  ]}
+>
+  <Fragment slot="title">
+    Taste the Difference&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">in Houston, TX</span>
+  </Fragment>
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+  <Fragment slot="subtitle">
+    Nourish your family with high-quality, local, and imported foods.<br class="hidden md:inline" />
+    Join us in building a healthier, sustainable future—one box at a time.
+  </Fragment>
+</CallToAction>
+
 </Layout>
