@@ -2,13 +2,13 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
+    },
     // {
     //   text: 'Homes',
     //   links: [
-    //     {
-    //       text: 'SaaS',
-    //       href: getPermalink('/homes/saas'),
-    //     },
     //     {
     //       text: 'Startup',
     //       href: getPermalink('/homes/startup'),
@@ -20,6 +20,10 @@ export const headerData = {
     //     {
     //       text: 'Personal',
     //       href: getPermalink('/homes/personal'),
+    //     },
+    //     {
+    //       text: 'For Farmers',
+    //      href: getPermalink('/homes/saas'),
     //     },
     //   ],
     // },
@@ -38,10 +42,10 @@ export const headerData = {
     //       text: 'Pricing',
     //       href: getPermalink('/pricing'),
     //     },
-    //     {
-    //       text: 'About us',
-    //       href: getPermalink('/about'),
-    //     },
+        {
+          text: 'For Farmers',
+          href: getPermalink('/farmers'),
+        },
     //     {
     //       text: 'Contact',
     //       href: getPermalink('/contact'),
@@ -85,11 +89,6 @@ export const headerData = {
     //     },
     //   ],
     // },
-    {
-      text: 'Blog',
-      href: getBlogPermalink(),
-    }
-    
     // {
     //   text: 'Widgets',
     //   href: '#',

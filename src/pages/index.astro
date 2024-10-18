@@ -56,6 +56,40 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
+  <Steps
+    title="Experience the best of local and European flavors with the WunderBox."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Order Your WunderBox</span>',
+        description:
+          'Select your favorite box tailored to your taste. Each WunderBox is packed with a curated selection of fresh, high-quality foods sourced from local farmers in Texas and premium European imports.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Unbox Freshness</span>',
+        description:
+          'Upon delivery or pickup, unwrap a delightful assortment of seasonal produce, artisanal goods, and treats that reflect our commitment to quality and sustainability. Experience the joy of fresh, nourishing foods!',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Enjoy and Share</span>',
+        description:
+          'Prepare delicious meals or share with loved ones. Each item is a step towards healthier eating and a connection to local farming. Your choice supports sustainable practices and nourishes your community.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Repeat the Experience</span>',
+        description:
+          'Become part of our community! With each order, you’re not just enjoying great food—you’re supporting local farmers and embracing a healthier lifestyle.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1533899345698-ac4fb35f28c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'WunderBox image',
+    }}
+  />
+
   <Features
     id="features"
     tagline="Features"
@@ -216,40 +250,6 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
-    title="Experience the best of local and European flavors with the WunderBox."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Order Your WunderBox</span>',
-        description:
-          'Select your favorite box tailored to your taste. Each WunderBox is packed with a curated selection of fresh, high-quality foods sourced from local farmers in Texas and premium European imports.',
-        icon: 'tabler:box',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Unbox Freshness</span>',
-        description:
-          'Upon delivery or pickup, unwrap a delightful assortment of seasonal produce, artisanal goods, and treats that reflect our commitment to quality and sustainability. Experience the joy of fresh, nourishing foods!',
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Enjoy and Share</span>',
-        description:
-          'Prepare delicious meals or share with loved ones. Each item is a step towards healthier eating and a connection to local farming. Your choice supports sustainable practices and nourishes your community.',
-        icon: 'tabler:heart',
-      },
-      {
-        title: 'Step 4: <span class="font-medium">Repeat the Experience</span>',
-        description:
-          'Become part of our community! With each order, you’re not just enjoying great food—you’re supporting local farmers and embracing a healthier lifestyle.',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1533899345698-ac4fb35f28c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'WunderBox image',
-    }}
-  />
-
   <!-- Features2 Widget ************** -->
 
   <!-- <Features2
@@ -380,24 +380,23 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Get Your WunderBox',
-      href: '#order',
-      target: '_blank',
-      icon: 'tabler:box',
-    },
-  ]}
->
-  <Fragment slot="title">
-    Taste the Difference&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">in Houston, TX</span>
-  </Fragment>
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Your WunderBox',
+        href: '#order',
+        target: '_blank',
+        icon: 'tabler:box',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Taste the Difference&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">in Houston, TX</span>
+    </Fragment>
 
-  <Fragment slot="subtitle">
-    Nourish your family with high-quality, local, and imported foods.<br class="hidden md:inline" />
-    Join us in building a healthier, sustainable future—one box at a time.
-  </Fragment>
-</CallToAction>
-
+    <Fragment slot="subtitle">
+      Nourish your family with high-quality, local, and imported foods.<br class="hidden md:inline" />
+      Join us in building a healthier, sustainable future—one box at a time.
+    </Fragment>
+  </CallToAction>
 </Layout>

@@ -1,0 +1,160 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Join the WunderCove Movement',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Empower Your Farm with WunderCove"
+    image={{
+      src: 'https://images.unsplash.com/photo-1527847263472-aa5338d178b8?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'A farmer proudly holding produce',
+    }}
+  >
+    <Fragment slot="title">
+      Become Part of the <br />
+      <span class="text-accent dark:text-white highlight">WunderCove Movement</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Join us in bringing high-quality European products and sustainable local farming practices to the world.
+      Together, we can restore the value of real food and connect your farm to more customers.
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Why Farmers Love Us"
+    stats={[
+      { title: 'Revenue Growth', amount: '0%' },
+      { title: 'Happy Customers', amount: '0' },
+      { title: 'Success Stories', amount: '0' },
+      { title: 'Collaborating Farms', amount: '0' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="What We Offer Farmers"
+    subtitle="We’re not just an import business—we’re a movement for better food and better business."
+    columns={3}
+    items={[
+      {
+        title: 'Use Your Products in WunderBox',
+        description: 'We feature your produce directly in our curated WunderBox, promoting your farm to new audiences.',
+        icon: 'tabler:box',
+      },
+      {
+        title: 'Expand Your Customer Reach',
+        description: 'We connect you with a broader network of customers.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Boost Your Revenue',
+        description: 'With increased exposure and higher sales, your farm will benefit from more sustainable income.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Website & IT Support',
+        description:
+          'In collaboration with Illusion Creative, we help you design your online presence and streamline operations.',
+        icon: 'tabler:devices',
+      },
+      {
+        title: 'Showcase Your Story',
+        description: 'We feature success stories from our farmers for free on our blog, inspiring others to join.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Partner with a Growing Movement',
+        description: 'You’ll be part of a movement that values sustainability, quality, and community.',
+        icon: 'tabler:leaf',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1533478583204-680d4ff74891?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Farmers working together in a field',
+    }}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="How It Works"
+    subtitle="Joining the WunderCove Movement is easy. Here’s how you can start making a difference."
+    items={[
+      {
+        title: 'Step 1: Apply Online',
+        description:
+          'Submit your farm’s information through our quick application process. We’ll review and get in touch!',
+      },
+      {
+        title: 'Step 2: Get Approved & Featured',
+        description:
+          'Once approved, your products will be added to the WunderBox and listed on our platform.',
+      },
+      {
+        title: 'Step 3: Grow with Us',
+        description:
+          'Watch your customer base grow as we promote your farm through our networks and blog stories.',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="Our Locations"
+    tagline="Where We Operate"
+    columns={4}
+    items={[
+      { title: 'United States', description: 'Miami, FL' },
+      { title: 'Germany', description: 'Berlin' },
+      { title: 'Spain', description: 'Madrid' },
+      { title: 'Australia', description: 'Sydney' },
+    ]}
+  /> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="Need Help?"
+    tagline="Get in Touch"
+    columns={2}
+    items={[
+      {
+        title: 'Chat with Us',
+        description:
+          'Our support team is here to answer your questions. Let’s find the best way for your farm to join us.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Call Us',
+        description:
+          'Prefer to speak directly? Give us a call, and we’ll guide you through the process step-by-step.',
+        icon: 'tabler:phone-call',
+      },
+    ]}
+  /> -->
+</Layout>
